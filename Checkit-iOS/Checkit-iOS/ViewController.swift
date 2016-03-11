@@ -12,13 +12,18 @@ import Alamofire
 class ViewController: UIViewController {
 
     var checks = [Check]()
+    var searchActive = false
+    var filtered = [Check]()
+
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view, typically from a nib.
-        searchForChecks()
+        //searchForChecks()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,8 +31,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func searchForChecks() {
-        Alamofire.request(.GET, "https://sac-checkit.herokuapp.com/api/v1/checks?utf8=%E2%9C%93&filterrific%5Bsearch_query%5D=peter")
+    func searchForChecks(search: String) {
+        Alamofire.request(.GET, "https://sac-checkit.herokuapp.com/api/v1/checks?utf8=%E2%9C%93&filterrific%5Bsearch_query%5D=\(search)")
             .responseJSON { response in
                 //print(response.request)  // original URL request
                 //print(response.response) // URL response
@@ -72,6 +77,15 @@ class ViewController: UIViewController {
         }
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showSegue" {
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let dvc = segue.destinationViewController as! CheckViewController
+                dvc.check = checks[row]
+            }
+        }
+    }
+
 
 }
 
@@ -86,6 +100,43 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = checks[indexPath.row].name
         return cell
     }
+}
+
+extension ViewController: UISearchBarDelegate {
+
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        searchActive = true;
+    }
+
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        searchActive = false;
+    }
+
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchActive = false;
+    }
+
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchActive = false;
+    }
+
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        /*
+        filtered = checks.filter({ (text) -> Bool in
+            let tmp: NSString = text
+            let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+            return range.location != NSNotFound
+        })
+        */
+        searchForChecks(searchBar.text!)
+        if checks.count == 0 {
+            searchActive = false
+        } else {
+            searchActive = true
+        }
+        self.tableView.reloadData()
+    }
+
 }
 
 
