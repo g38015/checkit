@@ -13,7 +13,7 @@
     </tr>
     <% checks.each do |check| %>
       <tr>
-        <td><%= link_to(check.name, check_path(check)) %></td>
+        <td><%= link_to(check.name.downcase.split.map(&:capitalize).join(' '), check_path(check)) %></td>
         <td><%= check.amount %></td>
         <td><%= check.number %></td>
         <td><%= check.date %></td>
