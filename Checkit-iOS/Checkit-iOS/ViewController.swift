@@ -15,29 +15,20 @@ class ViewController: UIViewController {
     var searchActive = false
     var filtered = [Check]()
 
-
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view, typically from a nib.
-        //searchForChecks()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func searchForChecks(search: String) {
         Alamofire.request(.GET, "https://sac-checkit.herokuapp.com/api/v1/checks?utf8=%E2%9C%93&filterrific%5Bsearch_query%5D=\(search)")
             .responseJSON { response in
-                //print(response.request)  // original URL request
-                //print(response.response) // URL response
-                //print(response.data)     // server data
-                //print(response.result)   // result of response serialization
 
                 if let JSON = response.result.value {
 
@@ -67,7 +58,7 @@ class ViewController: UIViewController {
                             number = numberJson as! String
                         }
 
-                        let check = Check(name: name, number: number, amount: amount, date: date)
+                        let check = Check(name: name.lowercaseString.capitalizedString, number: number, amount: amount, date: date)
 
                         self.checks.append(check)
 
@@ -85,8 +76,6 @@ class ViewController: UIViewController {
             }
         }
     }
-
-
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -98,6 +87,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         cell.textLabel?.text = checks[indexPath.row].name
+        cell.detailTextLabel?.text = checks[indexPath.row].amount
         return cell
     }
 }
@@ -121,14 +111,9 @@ extension ViewController: UISearchBarDelegate {
     }
 
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        /*
-        filtered = checks.filter({ (text) -> Bool in
-            let tmp: NSString = text
-            let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
-            return range.location != NSNotFound
-        })
-        */
-        searchForChecks(searchBar.text!)
+
+        searchForChecks(searchText.removeWhitespace())
+        
         if checks.count == 0 {
             searchActive = false
         } else {
@@ -138,5 +123,3 @@ extension ViewController: UISearchBarDelegate {
     }
 
 }
-
-

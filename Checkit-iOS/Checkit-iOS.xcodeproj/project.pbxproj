@@ -18,6 +18,7 @@
 		D089FDBD1C936654003C92F9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D089FDBC1C936654003C92F9 /* Podfile */; };
 		D089FDC21C93683F003C92F9 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC11C93683F003C92F9 /* Check.swift */; };
 		D089FDC41C93758D003C92F9 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC31C93758D003C92F9 /* CheckViewController.swift */; };
+		D089FDC71C938057003C92F9 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC61C938057003C92F9 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D089FDBC1C936654003C92F9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D089FDC11C93683F003C92F9 /* Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
 		D089FDC31C93758D003C92F9 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		D089FDC61C938057003C92F9 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		9DA2849C1C929103000948E8 /* Checkit-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D089FDC51C938049003C92F9 /* Extension */,
 				D089FDBE1C936814003C92F9 /* Models */,
 				D089FDBF1C93681B003C92F9 /* Views */,
 				D089FDC01C936821003C92F9 /* Controllers */,
@@ -180,6 +183,14 @@
 				D089FDC31C93758D003C92F9 /* CheckViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D089FDC51C938049003C92F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D089FDC61C938057003C92F9 /* Global.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +378,7 @@
 			files = (
 				9DA284A01C929103000948E8 /* ViewController.swift in Sources */,
 				D089FDC41C93758D003C92F9 /* CheckViewController.swift in Sources */,
+				D089FDC71C938057003C92F9 /* Global.swift in Sources */,
 				9DA2849E1C929103000948E8 /* AppDelegate.swift in Sources */,
 				D089FDC21C93683F003C92F9 /* Check.swift in Sources */,
 			);
