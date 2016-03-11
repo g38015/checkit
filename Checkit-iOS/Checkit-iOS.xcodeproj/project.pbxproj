@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8087702A90AD9305A4B5ED27 /* Pods_Checkit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0071F4263B1B49D79E15BF94 /* Pods_Checkit_iOS.framework */; };
 		9DA2849E1C929103000948E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2849D1C929103000948E8 /* AppDelegate.swift */; };
 		9DA284A01C929103000948E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2849F1C929103000948E8 /* ViewController.swift */; };
 		9DA284A31C929103000948E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA284A11C929103000948E8 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		9DA284A81C929103000948E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA284A61C929103000948E8 /* LaunchScreen.storyboard */; };
 		9DA284B31C929104000948E8 /* Checkit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA284B21C929104000948E8 /* Checkit_iOSTests.swift */; };
 		9DA284BE1C929104000948E8 /* Checkit_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA284BD1C929104000948E8 /* Checkit_iOSUITests.swift */; };
+		D089FDBD1C936654003C92F9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D089FDBC1C936654003C92F9 /* Podfile */; };
+		D089FDC21C93683F003C92F9 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC11C93683F003C92F9 /* Check.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0071F4263B1B49D79E15BF94 /* Pods_Checkit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		175E4446377B0E483CB0C13E /* Pods-Checkit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkit-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Checkit-iOS/Pods-Checkit-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9DA2849A1C929103000948E8 /* Checkit-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Checkit-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA2849D1C929103000948E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA2849F1C929103000948E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		9DA284B91C929104000948E8 /* Checkit-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Checkit-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA284BD1C929104000948E8 /* Checkit_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkit_iOSUITests.swift; sourceTree = "<group>"; };
 		9DA284BF1C929104000948E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1E27599237AB3C2018EC337 /* Pods-Checkit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkit-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checkit-iOS/Pods-Checkit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D089FDBC1C936654003C92F9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D089FDC11C93683F003C92F9 /* Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8087702A90AD9305A4B5ED27 /* Pods_Checkit_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +83,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219272A88E07A1C7DA9EB616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0071F4263B1B49D79E15BF94 /* Pods_Checkit_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		782429317A2B775F50E6D943 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1E27599237AB3C2018EC337 /* Pods-Checkit-iOS.debug.xcconfig */,
+				175E4446377B0E483CB0C13E /* Pods-Checkit-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9DA284911C929103000948E8 = {
 			isa = PBXGroup;
 			children = (
+				D089FDBC1C936654003C92F9 /* Podfile */,
 				9DA2849C1C929103000948E8 /* Checkit-iOS */,
 				9DA284B11C929103000948E8 /* Checkit-iOSTests */,
 				9DA284BC1C929104000948E8 /* Checkit-iOSUITests */,
 				9DA2849B1C929103000948E8 /* Products */,
+				782429317A2B775F50E6D943 /* Pods */,
+				219272A88E07A1C7DA9EB616 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +126,10 @@
 		9DA2849C1C929103000948E8 /* Checkit-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D089FDBE1C936814003C92F9 /* Models */,
+				D089FDBF1C93681B003C92F9 /* Views */,
+				D089FDC01C936821003C92F9 /* Controllers */,
 				9DA2849D1C929103000948E8 /* AppDelegate.swift */,
-				9DA2849F1C929103000948E8 /* ViewController.swift */,
 				9DA284A11C929103000948E8 /* Main.storyboard */,
 				9DA284A41C929103000948E8 /* Assets.xcassets */,
 				9DA284A61C929103000948E8 /* LaunchScreen.storyboard */,
@@ -125,6 +156,29 @@
 			path = "Checkit-iOSUITests";
 			sourceTree = "<group>";
 		};
+		D089FDBE1C936814003C92F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D089FDC11C93683F003C92F9 /* Check.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D089FDBF1C93681B003C92F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D089FDC01C936821003C92F9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2849F1C929103000948E8 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DA284C21C929104000948E8 /* Build configuration list for PBXNativeTarget "Checkit-iOS" */;
 			buildPhases = (
+				4AD569471CBCB15ECF45FCE8 /* Check Pods Manifest.lock */,
 				9DA284961C929103000948E8 /* Sources */,
 				9DA284971C929103000948E8 /* Frameworks */,
 				9DA284981C929103000948E8 /* Resources */,
+				06CA85D880CC515ED9F848AE /* Embed Pods Frameworks */,
+				676008FD19FC134EE68DCFF0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +288,7 @@
 			files = (
 				9DA284A81C929103000948E8 /* LaunchScreen.storyboard in Resources */,
 				9DA284A51C929103000948E8 /* Assets.xcassets in Resources */,
+				D089FDBD1C936654003C92F9 /* Podfile in Resources */,
 				9DA284A31C929103000948E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +309,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06CA85D880CC515ED9F848AE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Checkit-iOS/Pods-Checkit-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AD569471CBCB15ECF45FCE8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		676008FD19FC134EE68DCFF0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Checkit-iOS/Pods-Checkit-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9DA284961C929103000948E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +364,7 @@
 			files = (
 				9DA284A01C929103000948E8 /* ViewController.swift in Sources */,
 				9DA2849E1C929103000948E8 /* AppDelegate.swift in Sources */,
+				D089FDC21C93683F003C92F9 /* Check.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +502,7 @@
 		};
 		9DA284C31C929104000948E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1E27599237AB3C2018EC337 /* Pods-Checkit-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Checkit-iOS/Info.plist";
@@ -406,6 +514,7 @@
 		};
 		9DA284C41C929104000948E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 175E4446377B0E483CB0C13E /* Pods-Checkit-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Checkit-iOS/Info.plist";
@@ -482,6 +591,7 @@
 				9DA284C41C929104000948E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DA284C51C929104000948E8 /* Build configuration list for PBXNativeTarget "Checkit-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +600,7 @@
 				9DA284C71C929104000948E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DA284C81C929104000948E8 /* Build configuration list for PBXNativeTarget "Checkit-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +609,7 @@
 				9DA284CA1C929104000948E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
