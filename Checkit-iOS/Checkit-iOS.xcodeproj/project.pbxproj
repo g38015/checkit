@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DA2849E1C929103000948E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2849D1C929103000948E8 /* AppDelegate.swift */; };
+		9DA284A01C929103000948E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2849F1C929103000948E8 /* ViewController.swift */; };
+		9DA284A31C929103000948E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA284A11C929103000948E8 /* Main.storyboard */; };
+		9DA284A51C929103000948E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA284A41C929103000948E8 /* Assets.xcassets */; };
+		9DA284A81C929103000948E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA284A61C929103000948E8 /* LaunchScreen.storyboard */; };
+		9DA284B31C929104000948E8 /* Checkit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA284B21C929104000948E8 /* Checkit_iOSTests.swift */; };
+		9DA284BE1C929104000948E8 /* Checkit_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA284BD1C929104000948E8 /* Checkit_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DA284AF1C929103000948E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DA284921C929103000948E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DA284991C929103000948E8;
+			remoteInfo = "Checkit-iOS";
+		};
+		9DA284BA1C929104000948E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DA284921C929103000948E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DA284991C929103000948E8;
+			remoteInfo = "Checkit-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DA2849A1C929103000948E8 /* Checkit-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Checkit-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA2849D1C929103000948E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DA2849F1C929103000948E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DA284A21C929103000948E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DA284A41C929103000948E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA284A71C929103000948E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DA284A91C929103000948E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA284AE1C929103000948E8 /* Checkit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Checkit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA284B21C929104000948E8 /* Checkit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkit_iOSTests.swift; sourceTree = "<group>"; };
+		9DA284B41C929104000948E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA284B91C929104000948E8 /* Checkit-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Checkit-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA284BD1C929104000948E8 /* Checkit_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkit_iOSUITests.swift; sourceTree = "<group>"; };
+		9DA284BF1C929104000948E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DA284971C929103000948E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA284AB1C929103000948E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA284B61C929104000948E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DA284911C929103000948E8 = {
+			isa = PBXGroup;
+			children = (
+				9DA2849C1C929103000948E8 /* Checkit-iOS */,
+				9DA284B11C929103000948E8 /* Checkit-iOSTests */,
+				9DA284BC1C929104000948E8 /* Checkit-iOSUITests */,
+				9DA2849B1C929103000948E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DA2849B1C929103000948E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2849A1C929103000948E8 /* Checkit-iOS.app */,
+				9DA284AE1C929103000948E8 /* Checkit-iOSTests.xctest */,
+				9DA284B91C929104000948E8 /* Checkit-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DA2849C1C929103000948E8 /* Checkit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2849D1C929103000948E8 /* AppDelegate.swift */,
+				9DA2849F1C929103000948E8 /* ViewController.swift */,
+				9DA284A11C929103000948E8 /* Main.storyboard */,
+				9DA284A41C929103000948E8 /* Assets.xcassets */,
+				9DA284A61C929103000948E8 /* LaunchScreen.storyboard */,
+				9DA284A91C929103000948E8 /* Info.plist */,
+			);
+			path = "Checkit-iOS";
+			sourceTree = "<group>";
+		};
+		9DA284B11C929103000948E8 /* Checkit-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DA284B21C929104000948E8 /* Checkit_iOSTests.swift */,
+				9DA284B41C929104000948E8 /* Info.plist */,
+			);
+			path = "Checkit-iOSTests";
+			sourceTree = "<group>";
+		};
+		9DA284BC1C929104000948E8 /* Checkit-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9DA284BD1C929104000948E8 /* Checkit_iOSUITests.swift */,
+				9DA284BF1C929104000948E8 /* Info.plist */,
+			);
+			path = "Checkit-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DA284991C929103000948E8 /* Checkit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA284C21C929104000948E8 /* Build configuration list for PBXNativeTarget "Checkit-iOS" */;
+			buildPhases = (
+				9DA284961C929103000948E8 /* Sources */,
+				9DA284971C929103000948E8 /* Frameworks */,
+				9DA284981C929103000948E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Checkit-iOS";
+			productName = "Checkit-iOS";
+			productReference = 9DA2849A1C929103000948E8 /* Checkit-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DA284AD1C929103000948E8 /* Checkit-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA284C51C929104000948E8 /* Build configuration list for PBXNativeTarget "Checkit-iOSTests" */;
+			buildPhases = (
+				9DA284AA1C929103000948E8 /* Sources */,
+				9DA284AB1C929103000948E8 /* Frameworks */,
+				9DA284AC1C929103000948E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DA284B01C929103000948E8 /* PBXTargetDependency */,
+			);
+			name = "Checkit-iOSTests";
+			productName = "Checkit-iOSTests";
+			productReference = 9DA284AE1C929103000948E8 /* Checkit-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9DA284B81C929104000948E8 /* Checkit-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA284C81C929104000948E8 /* Build configuration list for PBXNativeTarget "Checkit-iOSUITests" */;
+			buildPhases = (
+				9DA284B51C929104000948E8 /* Sources */,
+				9DA284B61C929104000948E8 /* Frameworks */,
+				9DA284B71C929104000948E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DA284BB1C929104000948E8 /* PBXTargetDependency */,
+			);
+			name = "Checkit-iOSUITests";
+			productName = "Checkit-iOSUITests";
+			productReference = 9DA284B91C929104000948E8 /* Checkit-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DA284921C929103000948E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Peter Hitchcock";
+				TargetAttributes = {
+					9DA284991C929103000948E8 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					9DA284AD1C929103000948E8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 9DA284991C929103000948E8;
+					};
+					9DA284B81C929104000948E8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 9DA284991C929103000948E8;
+					};
+				};
+			};
+			buildConfigurationList = 9DA284951C929103000948E8 /* Build configuration list for PBXProject "Checkit-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DA284911C929103000948E8;
+			productRefGroup = 9DA2849B1C929103000948E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DA284991C929103000948E8 /* Checkit-iOS */,
+				9DA284AD1C929103000948E8 /* Checkit-iOSTests */,
+				9DA284B81C929104000948E8 /* Checkit-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DA284981C929103000948E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA284A81C929103000948E8 /* LaunchScreen.storyboard in Resources */,
+				9DA284A51C929103000948E8 /* Assets.xcassets in Resources */,
+				9DA284A31C929103000948E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA284AC1C929103000948E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA284B71C929104000948E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DA284961C929103000948E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA284A01C929103000948E8 /* ViewController.swift in Sources */,
+				9DA2849E1C929103000948E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA284AA1C929103000948E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA284B31C929104000948E8 /* Checkit_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA284B51C929104000948E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA284BE1C929104000948E8 /* Checkit_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DA284B01C929103000948E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DA284991C929103000948E8 /* Checkit-iOS */;
+			targetProxy = 9DA284AF1C929103000948E8 /* PBXContainerItemProxy */;
+		};
+		9DA284BB1C929104000948E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DA284991C929103000948E8 /* Checkit-iOS */;
+			targetProxy = 9DA284BA1C929104000948E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DA284A11C929103000948E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA284A21C929103000948E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DA284A61C929103000948E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA284A71C929103000948E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DA284C01C929104000948E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DA284C11C929104000948E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DA284C31C929104000948E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Checkit-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petehitchcock.Checkit-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9DA284C41C929104000948E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Checkit-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petehitchcock.Checkit-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9DA284C61C929104000948E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Checkit-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petehitchcock.Checkit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Checkit-iOS.app/Checkit-iOS";
+			};
+			name = Debug;
+		};
+		9DA284C71C929104000948E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Checkit-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petehitchcock.Checkit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Checkit-iOS.app/Checkit-iOS";
+			};
+			name = Release;
+		};
+		9DA284C91C929104000948E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Checkit-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petehitchcock.Checkit-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Checkit-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9DA284CA1C929104000948E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Checkit-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.petehitchcock.Checkit-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Checkit-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DA284951C929103000948E8 /* Build configuration list for PBXProject "Checkit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA284C01C929104000948E8 /* Debug */,
+				9DA284C11C929104000948E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA284C21C929104000948E8 /* Build configuration list for PBXNativeTarget "Checkit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA284C31C929104000948E8 /* Debug */,
+				9DA284C41C929104000948E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9DA284C51C929104000948E8 /* Build configuration list for PBXNativeTarget "Checkit-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA284C61C929104000948E8 /* Debug */,
+				9DA284C71C929104000948E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9DA284C81C929104000948E8 /* Build configuration list for PBXNativeTarget "Checkit-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA284C91C929104000948E8 /* Debug */,
+				9DA284CA1C929104000948E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DA284921C929103000948E8 /* Project object */;
+}
