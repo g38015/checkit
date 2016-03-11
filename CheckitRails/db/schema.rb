@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20160311055344) do
 
   create_table "checks", force: :cascade do |t|
+    t.string   "date"
+    t.string   "number"
+    t.string   "amount"
     t.string   "name"
-    t.float    "amount"
-    t.integer  "number"
-    t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
