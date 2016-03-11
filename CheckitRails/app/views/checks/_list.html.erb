@@ -1,0 +1,25 @@
+<div id="filterrific_results">
+
+  <div>
+    <%#= page_entries_info checks %>
+  </div>
+
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Number</th>
+      <th>Date</th>
+    </tr>
+    <% checks.each do |check| %>
+      <tr>
+        <td><%= link_to(check.name, check_path(check)) %></td>
+        <td><%= check.amount %></td>
+        <td><%= check.number %></td>
+        <td><%= check.date %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<%= will_paginate checks, renderer: BootstrapPagination::Rails %>

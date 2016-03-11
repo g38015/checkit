@@ -1,7 +1,17 @@
 class ChecksController < ApplicationController
 
   def index
-    @checks = Check.all
+    @filterrific = initialize_filterrific(
+      Check,
+      params[:filterrific]
+    ) or return
+
+    @checks = @filterrific.find.page(params[:page])
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def import
