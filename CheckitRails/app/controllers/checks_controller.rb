@@ -14,6 +14,10 @@ class ChecksController < ApplicationController
     end
   end
 
+  def show
+    @check = Check.find(params[:id])
+  end
+
   def import
     Check.import(params[:file])
     redirect_to root_url, notice: "Checks imported."
