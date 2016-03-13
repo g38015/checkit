@@ -15,6 +15,7 @@
 		9DA284A81C929103000948E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA284A61C929103000948E8 /* LaunchScreen.storyboard */; };
 		9DA284B31C929104000948E8 /* Checkit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA284B21C929104000948E8 /* Checkit_iOSTests.swift */; };
 		9DA284BE1C929104000948E8 /* Checkit_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA284BD1C929104000948E8 /* Checkit_iOSUITests.swift */; };
+		9DD33FC51C95F5B1006FAF4C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD33FC41C95F5B1006FAF4C /* LandingViewController.swift */; };
 		D089FDBD1C936654003C92F9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D089FDBC1C936654003C92F9 /* Podfile */; };
 		D089FDC21C93683F003C92F9 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC11C93683F003C92F9 /* Check.swift */; };
 		D089FDC41C93758D003C92F9 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC31C93758D003C92F9 /* CheckViewController.swift */; };
@@ -54,6 +55,7 @@
 		9DA284B91C929104000948E8 /* Checkit-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Checkit-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA284BD1C929104000948E8 /* Checkit_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkit_iOSUITests.swift; sourceTree = "<group>"; };
 		9DA284BF1C929104000948E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DD33FC41C95F5B1006FAF4C /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		C1E27599237AB3C2018EC337 /* Pods-Checkit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkit-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checkit-iOS/Pods-Checkit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D089FDBC1C936654003C92F9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D089FDC11C93683F003C92F9 /* Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		D089FDC01C936821003C92F9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9DD33FC41C95F5B1006FAF4C /* LandingViewController.swift */,
 				9DA2849F1C929103000948E8 /* ViewController.swift */,
 				D089FDC31C93758D003C92F9 /* CheckViewController.swift */,
 			);
@@ -380,6 +383,7 @@
 				D089FDC41C93758D003C92F9 /* CheckViewController.swift in Sources */,
 				D089FDC71C938057003C92F9 /* Global.swift in Sources */,
 				9DA2849E1C929103000948E8 /* AppDelegate.swift in Sources */,
+				9DD33FC51C95F5B1006FAF4C /* LandingViewController.swift in Sources */,
 				D089FDC21C93683F003C92F9 /* Check.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

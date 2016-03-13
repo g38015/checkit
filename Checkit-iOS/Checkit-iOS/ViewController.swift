@@ -20,6 +20,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let image = UIImage()
+
+        searchBar.setBackgroundImage(image, forBarPosition: .Any, barMetrics: .Default)
+        searchBar.scopeBarBackgroundImage = image
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,6 +93,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = checks[indexPath.row].name
         cell.detailTextLabel?.text = checks[indexPath.row].amount
         return cell
+    }
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
 
