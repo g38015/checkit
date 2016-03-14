@@ -7,8 +7,6 @@ namespace :scrape do
     require "open-uri"
     require "csv"
 
-    Dir.mkdir(File.join(Rails.root, 'tmp'))
-
     remote_base_url = "http://data.saccounty.net/rest/datastreams/212850"
     remote_page_name = "data.csv"
     remote_full_url = remote_base_url + "/" + remote_page_name
