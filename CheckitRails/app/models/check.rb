@@ -55,6 +55,7 @@ class Check < ActiveRecord::Base
     CSV.foreach(file.path, headers: true) do |row|
 
       check_hash = row.to_hash # exclude the price field
+      puts check_hash
       check = Check.where(id: check_hash["id"])
 
       if check.count == 1
