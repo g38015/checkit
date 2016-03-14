@@ -15,7 +15,7 @@ class LandingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         findCheckButton.layer.borderColor = UIColor.whiteColor().CGColor
-        findCheckButton.layer.borderWidth = 2
+        findCheckButton.layer.borderWidth = 1
     }
 
     override func didReceiveMemoryWarning() {
