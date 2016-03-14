@@ -1,6 +1,6 @@
 namespace :scrape do
 
-  file_path = "tmp/downloads/data.csv"
+  file_path = "#{Rails.root}/tmp/downloads/data.csv"
 
   desc "Download and import csv"
   task download_csv: :environment do
