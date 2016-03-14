@@ -14,15 +14,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Spring.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XLActionController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3423B6E4887010119B147716BB545E81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>439A1828207D3105E59E3B18B76CECA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1FDFD8BEDFDFE84C9F8EB381EF17672</key>
+		<key>80FAA136B224BE890D93EBCA6DC84BE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

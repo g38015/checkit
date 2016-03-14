@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Checkit-iOS/Alamofire.framework"
-  install_framework "Pods-Checkit-iOS/Spring.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Spring/Spring.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/XLActionController/XLActionController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Checkit-iOS/Alamofire.framework"
-  install_framework "Pods-Checkit-iOS/Spring.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/Spring/Spring.framework"
+  install_framework "$CONFIGURATION_BUILD_DIR/XLActionController/XLActionController.framework"
 fi

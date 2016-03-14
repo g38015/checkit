@@ -5,4 +5,5 @@ use_frameworks!
 target 'Checkit-iOS' do
     pod 'Alamofire'
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
+    pod 'XLActionController'
 end
