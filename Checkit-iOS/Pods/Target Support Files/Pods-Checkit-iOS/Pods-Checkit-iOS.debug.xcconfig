@@ -1,8 +1,8 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$CONFIGURATION_BUILD_DIR/Alamofire" "$CONFIGURATION_BUILD_DIR/Spring" "$CONFIGURATION_BUILD_DIR/XLActionController"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$CONFIGURATION_BUILD_DIR/Alamofire" "$CONFIGURATION_BUILD_DIR/ExpandingMenu" "$CONFIGURATION_BUILD_DIR/Spring" "$CONFIGURATION_BUILD_DIR/XLActionController"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Spring/Spring.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/XLActionController/XLActionController.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "Spring" -framework "XLActionController"
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/ExpandingMenu/ExpandingMenu.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Spring/Spring.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/XLActionController/XLActionController.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "ExpandingMenu" -framework "Spring" -framework "XLActionController"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_ROOT = ${SRCROOT}/Pods

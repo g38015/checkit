@@ -15,6 +15,11 @@
 		9DA284B31C929104000948E8 /* Checkit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA284B21C929104000948E8 /* Checkit_iOSTests.swift */; };
 		9DA284BE1C929104000948E8 /* Checkit_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA284BD1C929104000948E8 /* Checkit_iOSUITests.swift */; };
 		9DD33FC51C95F5B1006FAF4C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD33FC41C95F5B1006FAF4C /* LandingViewController.swift */; };
+		D01A07A51CA1E7970090FB0F /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01A07A41CA1E7970090FB0F /* InfoTableViewController.swift */; };
+		D02B6D671CA1B47000FBBCE1 /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B6D661CA1B47000FBBCE1 /* DeveloperViewController.swift */; };
+		D02B6D691CA1B64900FBBCE1 /* CountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B6D681CA1B64900FBBCE1 /* CountyViewController.swift */; };
+		D02B6D6B1CA1B65A00FBBCE1 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B6D6A1CA1B65A00FBBCE1 /* AlamofireViewController.swift */; };
+		D02B6D6D1CA1B66700FBBCE1 /* SpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B6D6C1CA1B66700FBBCE1 /* SpringViewController.swift */; };
 		D089FDBD1C936654003C92F9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D089FDBC1C936654003C92F9 /* Podfile */; };
 		D089FDC21C93683F003C92F9 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC11C93683F003C92F9 /* Check.swift */; };
 		D089FDC41C93758D003C92F9 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC31C93758D003C92F9 /* CheckViewController.swift */; };
@@ -56,6 +61,11 @@
 		9DA284BF1C929104000948E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DD33FC41C95F5B1006FAF4C /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		B58B63AEC829A20C29FB7288 /* Pods_Checkit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checkit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01A07A41CA1E7970090FB0F /* InfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
+		D02B6D661CA1B47000FBBCE1 /* DeveloperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
+		D02B6D681CA1B64900FBBCE1 /* CountyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyViewController.swift; sourceTree = "<group>"; };
+		D02B6D6A1CA1B65A00FBBCE1 /* AlamofireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
+		D02B6D6C1CA1B66700FBBCE1 /* SpringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringViewController.swift; sourceTree = "<group>"; };
 		D089FDBC1C936654003C92F9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D089FDC11C93683F003C92F9 /* Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
 		D089FDC31C93758D003C92F9 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +173,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D02B6D651CA1B45100FBBCE1 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D02B6D661CA1B47000FBBCE1 /* DeveloperViewController.swift */,
+				D02B6D681CA1B64900FBBCE1 /* CountyViewController.swift */,
+				D02B6D6A1CA1B65A00FBBCE1 /* AlamofireViewController.swift */,
+				D02B6D6C1CA1B66700FBBCE1 /* SpringViewController.swift */,
+				D01A07A41CA1E7970090FB0F /* InfoTableViewController.swift */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
 		D089FDBE1C936814003C92F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +203,7 @@
 		D089FDC01C936821003C92F9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D02B6D651CA1B45100FBBCE1 /* Info */,
 				9DD33FC41C95F5B1006FAF4C /* LandingViewController.swift */,
 				9DA2849F1C929103000948E8 /* ViewController.swift */,
 				D089FDC31C93758D003C92F9 /* CheckViewController.swift */,
@@ -382,9 +405,14 @@
 				9DA284A01C929103000948E8 /* ViewController.swift in Sources */,
 				D089FDC41C93758D003C92F9 /* CheckViewController.swift in Sources */,
 				D089FDC71C938057003C92F9 /* Global.swift in Sources */,
+				D02B6D6D1CA1B66700FBBCE1 /* SpringViewController.swift in Sources */,
 				9DA2849E1C929103000948E8 /* AppDelegate.swift in Sources */,
+				D02B6D6B1CA1B65A00FBBCE1 /* AlamofireViewController.swift in Sources */,
 				9DD33FC51C95F5B1006FAF4C /* LandingViewController.swift in Sources */,
 				D089FDC21C93683F003C92F9 /* Check.swift in Sources */,
+				D01A07A51CA1E7970090FB0F /* InfoTableViewController.swift in Sources */,
+				D02B6D691CA1B64900FBBCE1 /* CountyViewController.swift in Sources */,
+				D02B6D671CA1B47000FBBCE1 /* DeveloperViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
