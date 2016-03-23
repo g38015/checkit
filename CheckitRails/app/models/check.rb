@@ -46,7 +46,7 @@ class Check < ActiveRecord::Base
     }.join(' AND '),
     *terms.map { |e| [e] * num_or_conds }.flatten
 
-  byebug
+  #byebug
 
   where(clause)
 }
