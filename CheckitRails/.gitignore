@@ -14,5 +14,5 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
-/tmp/cache/assets/sprockets/v3.0
+/tmp/cache
 /tmp/pids

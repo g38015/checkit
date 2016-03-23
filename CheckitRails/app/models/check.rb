@@ -33,18 +33,22 @@ class Check < ActiveRecord::Base
   # replace "*" with "%" for wildcard searches,
   # append '%', remove duplicate '%'s
   terms = terms.map { |e|
+    # "%#{e.gsub('*', '')}%"
     (e.gsub('*', '%') + '%').gsub(/%+/, '%')
   }
   # configure number of OR conditions for provision
   # of interpolation arguments. Adjust this if you
   # change the number of OR conditions.
   num_or_conds = 2
-  where(
-    terms.map { |term|
+
+  clause = terms.map { |term|
       "(LOWER(checks.name) LIKE ? OR LOWER(checks.name) LIKE ?)"
     }.join(' AND '),
     *terms.map { |e| [e] * num_or_conds }.flatten
-  )
+
+  byebug
+
+  where(clause)
 }
   scope :sorted_by, lambda { |sort_key|
     # Sorts students by sort_key
