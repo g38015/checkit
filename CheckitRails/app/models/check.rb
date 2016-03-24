@@ -1,16 +1,6 @@
 class Check < ActiveRecord::Base
   require 'csv'
 
-  scope :filter_by_name, lambda { |keyword|
-    where("lower(name) LIKE ?", "%#{keyword.downcase}%" )
-  }
-
-  def self.search(params = {})
-    checks = params[:check_ids].present? ? Check.find(params[:check_ids]) : Check.all
-    checks = checks.filter_by_name(params[:keyword]) if params[:keyword]
-    checks
-  end
-
   filterrific(
     default_filter_params: { sorted_by: 'created_at_desc' },
     available_filters: [
@@ -34,15 +24,15 @@ class Check < ActiveRecord::Base
   # append '%', remove duplicate '%'s
   terms = terms.map { |e|
     # "%#{e.gsub('*', '')}%"
-    (e.gsub('*', '%') + '%').gsub(/%+/, '%')
+    (e.gsub('', '%') + '%').gsub(/%+/, '%')
   }
   # configure number of OR conditions for provision
   # of interpolation arguments. Adjust this if you
   # change the number of OR conditions.
-  num_or_conds = 2
+  num_or_conds = 1
 
   clause = terms.map { |term|
-      "(LOWER(checks.name) LIKE ? OR LOWER(checks.name) LIKE ?)"
+      "(LOWER(checks.name) LIKE ?)"
     }.join(' AND '),
     *terms.map { |e| [e] * num_or_conds }.flatten
 
