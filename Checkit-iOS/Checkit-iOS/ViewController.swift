@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image = UIImage()
+        //let image = UIImage()
 
-        searchBar.setBackgroundImage(image, forBarPosition: .Any, barMetrics: .Default)
-        searchBar.scopeBarBackgroundImage = image
+        //searchBar.setBackgroundImage(image, forBarPosition: .Any, barMetrics: .Default)
+        //searchBar.scopeBarBackgroundImage = image
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,7 +62,10 @@ class ViewController: UIViewController {
                             number = numberJson as! String
                         }
 
-                        let check = Check(name: name.lowercaseString.capitalizedString, number: number, amount: amount, date: date)
+                        var newAmount = amount.stringByReplacingOccurrencesOfString("-", withString: "")
+                        newAmount = newAmount.stringByReplacingOccurrencesOfString(",", withString: "")
+
+                        let check = Check(name: name.lowercaseString.capitalizedString, number: number, amount: newAmount, date: date)
 
                         self.checks.append(check)
 
@@ -89,9 +92,33 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        cell.textLabel?.text = checks[indexPath.row].name
-        cell.detailTextLabel?.text = checks[indexPath.row].amount
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! CheckTableViewCell
+        cell.nameLabel.text = checks[indexPath.row].name
+        cell.amountLabel.text = "$\(checks[indexPath.row].amount)"
+
+        let f = Float(checks[indexPath.row].amount)
+
+        switch f {
+        case _ where f < 100:
+            cell.cellBackgroundView.backgroundColor = UIColor(red: 27/255, green: 145/255, blue: 224/255, alpha: 1.0) //blue
+        case _ where f > 100 && f < 1000:
+             cell.cellBackgroundView.backgroundColor = UIColor(red: 36/255, green: 171/255, blue: 154/255, alpha: 1.0)  //green
+        case _ where f > 1000:
+             cell.cellBackgroundView.backgroundColor = UIColor(red: 233/255, green: 63/255, blue: 82/255, alpha: 1.0) //red
+        default:
+            print("def")
+        }
+        /*
+        if f < 100 {
+            cell.cellBackgroundView.backgroundColor = UIColor(red: 233/255, green: 63/255, blue: 82/255, alpha: 1.0) //red
+        }
+        else if f > 100 {
+            cell.cellBackgroundView.backgroundColor = UIColor(red: 36/255, green: 171/255, blue: 154/255, alpha: 1.0)  //green
+        }
+        else if f > 1000 {
+            cell.cellBackgroundView.backgroundColor = UIColor(red: 27/255, green: 145/255, blue: 224/255, alpha: 1.0) //blue
+        }
+        */
         return cell
     }
 
@@ -103,19 +130,20 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 extension ViewController: UISearchBarDelegate {
 
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        searchActive = true;
+        searchActive = true
     }
 
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-        searchActive = false;
+        searchActive = false
     }
 
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        searchActive = false;
+        searchActive = false
     }
 
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        searchActive = false;
+        searchActive = false
+        searchBar.resignFirstResponder()
     }
 
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {

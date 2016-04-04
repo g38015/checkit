@@ -24,6 +24,7 @@
 		D089FDC21C93683F003C92F9 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC11C93683F003C92F9 /* Check.swift */; };
 		D089FDC41C93758D003C92F9 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC31C93758D003C92F9 /* CheckViewController.swift */; };
 		D089FDC71C938057003C92F9 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089FDC61C938057003C92F9 /* Global.swift */; };
+		D0FAE9201CB30F8500EE4CC2 /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAE91F1CB30F8500EE4CC2 /* CheckTableViewCell.swift */; };
 		EE4C39DECE3DE0432D425D65 /* Pods_Checkit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58B63AEC829A20C29FB7288 /* Pods_Checkit_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		D089FDC11C93683F003C92F9 /* Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
 		D089FDC31C93758D003C92F9 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		D089FDC61C938057003C92F9 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D0FAE91F1CB30F8500EE4CC2 /* CheckTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
 		E36D976526DAA975D334A1B2 /* Pods-Checkit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checkit-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checkit-iOS/Pods-Checkit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +198,7 @@
 		D089FDBF1C93681B003C92F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D0FAE91F1CB30F8500EE4CC2 /* CheckTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FAE9201CB30F8500EE4CC2 /* CheckTableViewCell.swift in Sources */,
 				9DA284A01C929103000948E8 /* ViewController.swift in Sources */,
 				D089FDC41C93758D003C92F9 /* CheckViewController.swift in Sources */,
 				D089FDC71C938057003C92F9 /* Global.swift in Sources */,
